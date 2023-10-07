@@ -1,0 +1,82 @@
+$breakpoints: (
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+@mixin xs {
+  @media (min-width: map-get($breakpoints, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($breakpoints, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($breakpoints, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($breakpoints, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($breakpoints, "xl")) {
+    @content;
+  }
+}
+
+@mixin breakpoint($bp: 0) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+.navbar {
+  @include xs {
+    .full-navbar {
+      display: none;
+      flex-direction: column;
+      padding: 0;
+      margin-top: $base-margin*1.5;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      a {
+        padding: $base-padding 0;
+      }
+    }
+    .short-navbar {
+      display: flex;
+    }
+    
+  }
+  @include md {
+    .short-navbar {
+      display: none;
+    }
+    .close-navbar {
+      display: none;
+    }
+    .full-navbar {
+      display: flex;
+      flex-direction: row;
+      padding: 0 $base-padding*5;
+
+      a {
+        padding: $base-padding*2.2 0;
+      }
+    }
+  }
+}

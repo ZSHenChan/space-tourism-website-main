@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../sass/index.css" />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <main class="main">
+      <nav class="navbar">
+        <img src="assets/shared/logo.svg" alt="logo" class="ml-3" />
+        <img
+          src="assets/shared/icon-hamburger.svg"
+          alt="icon-hamburger"
+          class="short-navbar mr-3"
+          onclick="showNavbar()"
+        />
+        <section class="full-navbar">
+          <img
+            class="close-navbar"
+            src="assets/shared/icon-close.svg"
+            alt="icon-close"
+            onclick="closeNavbar()"
+          />
+          <a href="" id="current-page"> <span>00</span>&nbsp Home </a>
+          <a href=""> <span>01</span>&nbsp Destination </a>
+          <a href=""> <span>02</span>&nbsp Crew </a>
+          <a href=""> <span>03</span>&nbsp Technology </a>
+        </section>
+      </nav>
+      <!-- <section></section>
+      <button></button> -->
+    </main>
+  </body>
 
-  So, you want to travel to
-  Space
-  Let’s face it; if you want to go to space, you might as well genuinely go to 
-  outer space and not hover kind of on the edge of it. Well sit back, and relax 
-  because we’ll give you a truly out of this world experience!
-
-  Explore
-
-</body>
+  <script src="../js/navbar.js"></script>
 </html>

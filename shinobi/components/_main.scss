@@ -1,0 +1,11 @@
+.main {
+    display: block;
+    box-sizing: border-box;
+    min-height: 120dvh;
+    width: 100dvw;
+    background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: $primary;
+    overflow-x: hidden;
+}
