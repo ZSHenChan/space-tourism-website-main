@@ -37,6 +37,7 @@
   
   max-width: 100%;
   grid-template-columns: repeat(4, 1fr);
+  z-index: 2;
   
   &::before {
       content: "";
@@ -47,7 +48,8 @@
       top: 0;
       left: 0;
       backdrop-filter: blur(10px);
-      opacity: 0.4;
+      opacity: 0.8;
+      z-index: 1;
   }
 
   a{

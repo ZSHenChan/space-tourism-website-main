@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  font-family: "Arvo", serif;
+}
+
 /* reset styles */
 * {
   color: inherit;
@@ -28,7 +32,7 @@ img {
 }
 
 .test {
-  color: white;
+  color: #8e8c9c;
 }
 
 @media (min-width: 0) {
@@ -49,6 +53,9 @@ img {
   }
 }
 @media (min-width: 720px) {
+  .navbar, .navbar-white, .navbar-black, .navbar-gray, .navbar-purple, .navbar-orange, .navbar-green, .navbar-yellow, .navbar-red, .navbar-blue, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
+    margin-bottom: 7.5rem;
+  }
   .navbar .short-navbar, .navbar-white .short-navbar, .navbar-black .short-navbar, .navbar-gray .short-navbar, .navbar-purple .short-navbar, .navbar-orange .short-navbar, .navbar-green .short-navbar, .navbar-yellow .short-navbar, .navbar-red .short-navbar, .navbar-blue .short-navbar, .navbar-info .short-navbar, .navbar-error .short-navbar, .navbar-secondary .short-navbar, .navbar-primary .short-navbar {
     display: none;
   }
@@ -58,10 +65,86 @@ img {
   .navbar .full-navbar, .navbar-white .full-navbar, .navbar-black .full-navbar, .navbar-gray .full-navbar, .navbar-purple .full-navbar, .navbar-orange .full-navbar, .navbar-green .full-navbar, .navbar-yellow .full-navbar, .navbar-red .full-navbar, .navbar-blue .full-navbar, .navbar-info .full-navbar, .navbar-error .full-navbar, .navbar-secondary .full-navbar, .navbar-primary .full-navbar {
     display: flex;
     flex-direction: row;
+    padding: 0 1rem;
+  }
+  .navbar .full-navbar a, .navbar-white .full-navbar a, .navbar-black .full-navbar a, .navbar-gray .full-navbar a, .navbar-purple .full-navbar a, .navbar-orange .full-navbar a, .navbar-green .full-navbar a, .navbar-yellow .full-navbar a, .navbar-red .full-navbar a, .navbar-blue .full-navbar a, .navbar-info .full-navbar a, .navbar-error .full-navbar a, .navbar-secondary .full-navbar a, .navbar-primary .full-navbar a {
+    padding: 2.2rem 0;
+  }
+}
+@media (min-width: 960px) {
+  .navbar .full-navbar, .navbar-white .full-navbar, .navbar-black .full-navbar, .navbar-gray .full-navbar, .navbar-purple .full-navbar, .navbar-orange .full-navbar, .navbar-green .full-navbar, .navbar-yellow .full-navbar, .navbar-red .full-navbar, .navbar-blue .full-navbar, .navbar-info .full-navbar, .navbar-error .full-navbar, .navbar-secondary .full-navbar, .navbar-primary .full-navbar {
     padding: 0 5rem;
   }
   .navbar .full-navbar a, .navbar-white .full-navbar a, .navbar-black .full-navbar a, .navbar-gray .full-navbar a, .navbar-purple .full-navbar a, .navbar-orange .full-navbar a, .navbar-green .full-navbar a, .navbar-yellow .full-navbar a, .navbar-red .full-navbar a, .navbar-blue .full-navbar a, .navbar-info .full-navbar a, .navbar-error .full-navbar a, .navbar-secondary .full-navbar a, .navbar-primary .full-navbar a {
     padding: 2.2rem 0;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar, .navbar-white, .navbar-black, .navbar-gray, .navbar-purple, .navbar-orange, .navbar-green, .navbar-yellow, .navbar-red, .navbar-blue, .navbar-info, .navbar-error, .navbar-secondary, .navbar-primary {
+    margin-bottom: 11.25rem;
+  }
+}
+
+@media (min-width: 0) {
+  .main {
+    background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+    padding: 0 1rem;
+  }
+}
+@media (min-width: 720px) {
+  .main {
+    background-image: url(/starter-code/assets/home/background-home-tablet.jpg);
+    padding: 0 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .main {
+    background-image: url(/starter-code/assets/home/background-home-desktop.jpg);
+    padding: 0 3rem;
+  }
+}
+@media (min-width: 0) {
+  .main .box {
+    max-width: 35ch;
+  }
+  .main .box p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+  }
+  .main .box h1 {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 720px) {
+  .main .box {
+    max-width: 45ch;
+  }
+  .main .box p {
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+  .main .box h1 {
+    font-size: 7rem;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    justify-self: center;
+  }
+}
+@media (min-width: 720px) and (min-width: 1200px) {
+  .main .box {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px) {
+  .main .box {
+    max-width: 25rem;
+    text-align: justify;
+  }
+}
+@media (min-width: 1200px) {
+  .main .centralise {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
@@ -445,243 +528,243 @@ img {
   }
 }
 .text-primary {
-  color: white;
+  color: #8e8c9c;
 }
 
 .text-hover-primary:hover {
-  color: white;
+  color: #8e8c9c;
 }
 
 .bg-primary {
-  background-color: white;
+  background-color: #8e8c9c;
+}
+
+.text-primary-light-1 {
+  color: #9998a6;
+}
+
+.text-hover-primary-light-1:hover {
+  color: #9998a6;
+}
+
+.bg-primary-light-1 {
+  background-color: #9998a6;
+}
+
+.text-primary-light-2 {
+  color: #a5a3b0;
+}
+
+.text-hover-primary-light-2:hover {
+  color: #a5a3b0;
+}
+
+.bg-primary-light-2 {
+  background-color: #a5a3b0;
+}
+
+.text-primary-light-3 {
+  color: #b0afba;
+}
+
+.text-hover-primary-light-3:hover {
+  color: #b0afba;
+}
+
+.bg-primary-light-3 {
+  background-color: #b0afba;
+}
+
+.text-primary-light-4 {
+  color: #bbbac4;
+}
+
+.text-hover-primary-light-4:hover {
+  color: #bbbac4;
+}
+
+.bg-primary-light-4 {
+  background-color: #bbbac4;
+}
+
+.text-primary-light-5 {
+  color: #c7c6ce;
+}
+
+.text-hover-primary-light-5:hover {
+  color: #c7c6ce;
+}
+
+.bg-primary-light-5 {
+  background-color: #c7c6ce;
+}
+
+.text-primary-light-6 {
+  color: #d2d1d7;
+}
+
+.text-hover-primary-light-6:hover {
+  color: #d2d1d7;
+}
+
+.bg-primary-light-6 {
+  background-color: #d2d1d7;
+}
+
+.text-primary-light-7 {
+  color: #dddde1;
+}
+
+.text-hover-primary-light-7:hover {
+  color: #dddde1;
+}
+
+.bg-primary-light-7 {
+  background-color: #dddde1;
+}
+
+.text-primary-light-8 {
+  color: #e8e8eb;
+}
+
+.text-hover-primary-light-8:hover {
+  color: #e8e8eb;
+}
+
+.bg-primary-light-8 {
+  background-color: #e8e8eb;
+}
+
+.text-primary-light-9 {
+  color: #f4f4f5;
+}
+
+.text-hover-primary-light-9:hover {
+  color: #f4f4f5;
+}
+
+.bg-primary-light-9 {
+  background-color: #f4f4f5;
+}
+
+.text-primary-dark-1 {
+  color: #807e8c;
+}
+
+.text-hover-primary-dark-1:hover {
+  color: #807e8c;
+}
+
+.bg-primary-dark-1 {
+  background-color: #807e8c;
+}
+
+.text-primary-dark-2 {
+  color: #72707d;
+}
+
+.text-hover-primary-dark-2:hover {
+  color: #72707d;
+}
+
+.bg-primary-dark-2 {
+  background-color: #72707d;
+}
+
+.text-primary-dark-3 {
+  color: #63626d;
+}
+
+.text-hover-primary-dark-3:hover {
+  color: #63626d;
+}
+
+.bg-primary-dark-3 {
+  background-color: #63626d;
+}
+
+.text-primary-dark-4 {
+  color: #55545e;
+}
+
+.text-hover-primary-dark-4:hover {
+  color: #55545e;
+}
+
+.bg-primary-dark-4 {
+  background-color: #55545e;
+}
+
+.text-primary-dark-5 {
+  color: #47464e;
+}
+
+.text-hover-primary-dark-5:hover {
+  color: #47464e;
+}
+
+.bg-primary-dark-5 {
+  background-color: #47464e;
+}
+
+.text-primary-dark-6 {
+  color: #39383e;
+}
+
+.text-hover-primary-dark-6:hover {
+  color: #39383e;
+}
+
+.bg-primary-dark-6 {
+  background-color: #39383e;
+}
+
+.text-primary-dark-7 {
+  color: #2b2a2f;
+}
+
+.text-hover-primary-dark-7:hover {
+  color: #2b2a2f;
+}
+
+.bg-primary-dark-7 {
+  background-color: #2b2a2f;
+}
+
+.text-primary-dark-8 {
+  color: #1c1c1f;
+}
+
+.text-hover-primary-dark-8:hover {
+  color: #1c1c1f;
+}
+
+.bg-primary-dark-8 {
+  background-color: #1c1c1f;
+}
+
+.text-primary-dark-9 {
+  color: #0e0e10;
+}
+
+.text-hover-primary-dark-9:hover {
+  color: #0e0e10;
+}
+
+.bg-primary-dark-9 {
+  background-color: #0e0e10;
 }
 
 .text-secondary {
-  color: #1ac886;
+  color: white;
 }
 
 .text-hover-secondary:hover {
-  color: #1ac886;
+  color: white;
 }
 
 .bg-secondary {
-  background-color: #1ac886;
-}
-
-.text-secondary-light-1 {
-  color: #31ce92;
-}
-
-.text-hover-secondary-light-1:hover {
-  color: #31ce92;
-}
-
-.bg-secondary-light-1 {
-  background-color: #31ce92;
-}
-
-.text-secondary-light-2 {
-  color: #48d39e;
-}
-
-.text-hover-secondary-light-2:hover {
-  color: #48d39e;
-}
-
-.bg-secondary-light-2 {
-  background-color: #48d39e;
-}
-
-.text-secondary-light-3 {
-  color: #5fd9aa;
-}
-
-.text-hover-secondary-light-3:hover {
-  color: #5fd9aa;
-}
-
-.bg-secondary-light-3 {
-  background-color: #5fd9aa;
-}
-
-.text-secondary-light-4 {
-  color: #76deb6;
-}
-
-.text-hover-secondary-light-4:hover {
-  color: #76deb6;
-}
-
-.bg-secondary-light-4 {
-  background-color: #76deb6;
-}
-
-.text-secondary-light-5 {
-  color: #8de4c3;
-}
-
-.text-hover-secondary-light-5:hover {
-  color: #8de4c3;
-}
-
-.bg-secondary-light-5 {
-  background-color: #8de4c3;
-}
-
-.text-secondary-light-6 {
-  color: #a3e9cf;
-}
-
-.text-hover-secondary-light-6:hover {
-  color: #a3e9cf;
-}
-
-.bg-secondary-light-6 {
-  background-color: #a3e9cf;
-}
-
-.text-secondary-light-7 {
-  color: #baefdb;
-}
-
-.text-hover-secondary-light-7:hover {
-  color: #baefdb;
-}
-
-.bg-secondary-light-7 {
-  background-color: #baefdb;
-}
-
-.text-secondary-light-8 {
-  color: #d1f4e7;
-}
-
-.text-hover-secondary-light-8:hover {
-  color: #d1f4e7;
-}
-
-.bg-secondary-light-8 {
-  background-color: #d1f4e7;
-}
-
-.text-secondary-light-9 {
-  color: #e8faf3;
-}
-
-.text-hover-secondary-light-9:hover {
-  color: #e8faf3;
-}
-
-.bg-secondary-light-9 {
-  background-color: #e8faf3;
-}
-
-.text-secondary-dark-1 {
-  color: #17b479;
-}
-
-.text-hover-secondary-dark-1:hover {
-  color: #17b479;
-}
-
-.bg-secondary-dark-1 {
-  background-color: #17b479;
-}
-
-.text-secondary-dark-2 {
-  color: #15a06b;
-}
-
-.text-hover-secondary-dark-2:hover {
-  color: #15a06b;
-}
-
-.bg-secondary-dark-2 {
-  background-color: #15a06b;
-}
-
-.text-secondary-dark-3 {
-  color: #128c5e;
-}
-
-.text-hover-secondary-dark-3:hover {
-  color: #128c5e;
-}
-
-.bg-secondary-dark-3 {
-  background-color: #128c5e;
-}
-
-.text-secondary-dark-4 {
-  color: #107850;
-}
-
-.text-hover-secondary-dark-4:hover {
-  color: #107850;
-}
-
-.bg-secondary-dark-4 {
-  background-color: #107850;
-}
-
-.text-secondary-dark-5 {
-  color: #0d6443;
-}
-
-.text-hover-secondary-dark-5:hover {
-  color: #0d6443;
-}
-
-.bg-secondary-dark-5 {
-  background-color: #0d6443;
-}
-
-.text-secondary-dark-6 {
-  color: #0a5036;
-}
-
-.text-hover-secondary-dark-6:hover {
-  color: #0a5036;
-}
-
-.bg-secondary-dark-6 {
-  background-color: #0a5036;
-}
-
-.text-secondary-dark-7 {
-  color: #083c28;
-}
-
-.text-hover-secondary-dark-7:hover {
-  color: #083c28;
-}
-
-.bg-secondary-dark-7 {
-  background-color: #083c28;
-}
-
-.text-secondary-dark-8 {
-  color: #05281b;
-}
-
-.text-hover-secondary-dark-8:hover {
-  color: #05281b;
-}
-
-.bg-secondary-dark-8 {
-  background-color: #05281b;
-}
-
-.text-secondary-dark-9 {
-  color: #03140d;
-}
-
-.text-hover-secondary-dark-9:hover {
-  color: #03140d;
-}
-
-.bg-secondary-dark-9 {
-  background-color: #03140d;
+  background-color: white;
 }
 
 .text-error {
@@ -2782,101 +2865,117 @@ img {
 .btn {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
   background-color: #e2e2e2;
 }
 
-.btn-primary {
+.round-btn {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
-  background-color: white;
+  background-color: #e2e2e2;
+  border-radius: 50%;
+  width: 13rem;
+  height: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  background-color: #8e8c9c;
 }
 .btn-primary:hover {
-  background-color: white;
+  background-color: #9b9aa8;
 }
 
 .btn-outlined-primary {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 3px solid #8e8c9c;
+}
+.btn-outlined-primary:hover {
+  background-color: #8e8c9c;
+}
+
+.btn-complement-primary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  background-color: #8e8c9c;
+  color: #e2e3de;
+}
+.btn-complement-primary:hover {
+  color: #8e8c9c;
+  background-color: #e2e3de;
+}
+
+.btn-secondary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+  background-color: white;
+}
+.btn-secondary:hover {
+  background-color: white;
+}
+
+.btn-outlined-secondary {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
   background-color: #fff;
   border: 3px solid white;
 }
-.btn-outlined-primary:hover {
-  background-color: white;
-}
-
-.btn-complement-primary {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 1rem 2rem;
-  border-radius: 20px;
-  background-color: white;
-  color: white;
-}
-.btn-complement-primary:hover {
-  color: white;
-  background-color: white;
-}
-
-.btn-secondary {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 1rem 2rem;
-  border-radius: 20px;
-  background-color: #1ac886;
-}
-.btn-secondary:hover {
-  background-color: #1ddf95;
-}
-
-.btn-outlined-secondary {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  border: 0;
-  padding: 1rem 2rem;
-  border-radius: 20px;
-  background-color: #fff;
-  border: 3px solid #1ac886;
-}
 .btn-outlined-secondary:hover {
-  background-color: #1ac886;
+  background-color: white;
 }
 
 .btn-complement-secondary {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
-  background-color: #1ac886;
-  color: #f08bb1;
+  background-color: white;
+  color: white;
 }
 .btn-complement-secondary:hover {
-  color: #1ac886;
-  background-color: #f08bb1;
+  color: white;
+  background-color: white;
 }
 
 .btn-error {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -2889,7 +2988,7 @@ img {
 .btn-outlined-error {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -2903,7 +3002,7 @@ img {
 .btn-complement-error {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -2918,7 +3017,7 @@ img {
 .btn-info {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -2931,7 +3030,7 @@ img {
 .btn-outlined-info {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -2945,7 +3044,7 @@ img {
 .btn-complement-info {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -2960,7 +3059,7 @@ img {
 .btn-blue {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -2973,7 +3072,7 @@ img {
 .btn-outlined-blue {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -2987,7 +3086,7 @@ img {
 .btn-complement-blue {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3002,7 +3101,7 @@ img {
 .btn-red {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3015,7 +3114,7 @@ img {
 .btn-outlined-red {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3029,7 +3128,7 @@ img {
 .btn-complement-red {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3044,7 +3143,7 @@ img {
 .btn-yellow {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3057,7 +3156,7 @@ img {
 .btn-outlined-yellow {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3071,7 +3170,7 @@ img {
 .btn-complement-yellow {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3086,7 +3185,7 @@ img {
 .btn-green {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3099,7 +3198,7 @@ img {
 .btn-outlined-green {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3113,7 +3212,7 @@ img {
 .btn-complement-green {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3128,7 +3227,7 @@ img {
 .btn-orange {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3141,7 +3240,7 @@ img {
 .btn-outlined-orange {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3155,7 +3254,7 @@ img {
 .btn-complement-orange {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3170,7 +3269,7 @@ img {
 .btn-purple {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3183,7 +3282,7 @@ img {
 .btn-outlined-purple {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3197,7 +3296,7 @@ img {
 .btn-complement-purple {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3212,7 +3311,7 @@ img {
 .btn-gray {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3225,7 +3324,7 @@ img {
 .btn-outlined-gray {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3239,7 +3338,7 @@ img {
 .btn-complement-gray {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3254,7 +3353,7 @@ img {
 .btn-black {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3267,7 +3366,7 @@ img {
 .btn-outlined-black {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3281,7 +3380,7 @@ img {
 .btn-complement-black {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3296,7 +3395,7 @@ img {
 .btn-white {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3309,7 +3408,7 @@ img {
 .btn-outlined-white {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3323,7 +3422,7 @@ img {
 .btn-complement-white {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: 1rem 2rem;
   border-radius: 20px;
@@ -3352,11 +3451,11 @@ img {
   font-size: 1.5rem;
 }
 .navbar-primary {
-  background-color: white;
+  background-color: #8e8c9c;
 }
 
 .navbar-secondary {
-  background-color: #1ac886;
+  background-color: white;
 }
 
 .navbar-error {
@@ -3413,6 +3512,7 @@ img {
   box-sizing: border-box;
   max-width: 100%;
   grid-template-columns: repeat(4, 1fr);
+  z-index: 2;
 }
 .full-navbar::before {
   content: "";
@@ -3424,7 +3524,8 @@ img {
   left: 0;
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  opacity: 0.4;
+  opacity: 0.8;
+  z-index: 1;
 }
 .full-navbar a {
   padding: 2.2rem 0;
@@ -3436,7 +3537,7 @@ img {
 }
 
 #current-page {
-  border-bottom: solid 2px white;
+  border-bottom: solid 2px #8e8c9c;
 }
 
 .close-navbar {
@@ -3453,7 +3554,7 @@ img {
 
 .badge-primary {
   border-radius: 80px;
-  background-color: white;
+  background-color: #8e8c9c;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: normal;
@@ -3461,7 +3562,7 @@ img {
 
 .badge-secondary {
   border-radius: 80px;
-  background-color: #1ac886;
+  background-color: white;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
   font-weight: normal;
@@ -3560,11 +3661,16 @@ img {
   box-sizing: border-box;
   min-height: 120dvh;
   width: 100dvw;
-  background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+  overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
-  overflow-x: hidden;
+  color: #8e8c9c;
+}
+.main .box p {
+  opacity: 0.95;
+}
+.main .box h1 {
+  font-weight: 100;
 }
 
 .p-0 {
@@ -3909,4 +4015,20 @@ img {
 
 .font-xxl {
   font-size: 3rem;
+}
+
+.font-xxxl {
+  font-size: 5rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.centralise {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */

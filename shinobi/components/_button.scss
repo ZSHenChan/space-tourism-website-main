@@ -1,7 +1,7 @@
 @mixin btn($bg-color: #e2e2e2) {
   text-decoration: none;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
   border: 0;
   padding: $base-padding $base-padding * 2;
   border-radius: $base-border-radius;
@@ -10,6 +10,15 @@
 
 .btn {
   @include btn;
+}
+.round-btn {
+  @include btn;
+  border-radius: 50%;
+  width: $base-padding*13;
+  height: $base-padding*13;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
 @each $key, $val in $colors {
@@ -32,6 +41,6 @@
     &:hover {
       color: $val;
       background-color: light-comp($val);
-    }
+    } 
   }
 }

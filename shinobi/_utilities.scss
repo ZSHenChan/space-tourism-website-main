@@ -155,7 +155,8 @@ $utilities: (
       "md": $base-font-size,
       "lg": $font-size-lg,
       "xl": $font-size-xl,
-      "xxl": $font-size-xxl
+      "xxl": $font-size-xxl,
+      "xxxl": $base-font-size*5
     )
   )
 );
@@ -176,4 +177,16 @@ $utilities: (
       }
     }
   }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.centralise {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }

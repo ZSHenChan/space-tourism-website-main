@@ -3,9 +3,19 @@
     box-sizing: border-box;
     min-height: 120dvh;
     width: 100dvw;
-    background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+    overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
     color: $primary;
-    overflow-x: hidden;
+
+    .box {
+        p{
+            opacity: 0.95;
+        }
+        h1 {
+            font-weight: 100;
+        }
+    }
 }
+
+
