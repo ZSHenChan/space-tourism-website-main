@@ -1,0 +1,45 @@
+.index {
+    @include xs {
+      background-image: url(/starter-code/assets/home/background-home-mobile.jpg);
+      padding: 0 $base-padding;
+    }
+    @include md {
+      background-image: url(/starter-code/assets/home/background-home-tablet.jpg);
+      padding: 0 $base-padding*2;
+    }
+    @include xl {
+      background-image: url(/starter-code/assets/home/background-home-desktop.jpg);
+      padding: 0 $base-padding*3;
+    }
+}
+
+.europa {
+    @include xs {
+        background-image: url(/starter-code/assets/destination/background-destination-mobile.jpg);
+        padding: 0 $base-padding;
+      }
+      @include md {
+        background-image: url(/starter-code/assets/destination/background-destination-tablet.jpg);
+        padding: 0 $base-padding*2;
+      }
+      @include xl {
+        background-image: url(/starter-code/assets/destination/background-destination-desktop.jpg);
+        padding: 0 $base-padding*3;
+      }
+}
+
+.crew {
+  background-size: cover;
+  @include xs {
+    background-image: url(/starter-code/assets/crew/background-crew-mobile.jpg);
+    padding: 0 $base-padding;
+  }
+  @include md {
+    background-image: url(/starter-code/assets/crew/background-crew-tablet.jpg);
+    padding: 0 $base-padding*2;
+  }
+  @include xl {
+    background-image: url(/starter-code/assets/crew/background-crew-desktop.jpg);
+    padding: 0 $base-padding*3;
+  }
+}

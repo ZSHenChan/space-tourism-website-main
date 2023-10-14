@@ -15,7 +15,9 @@
 @import 'components/button';
 @import 'components/navbar';
 @import 'components/badge';
-@import 'components/main';
 
 // utilities (margin, padding, opacity, etc)
 @import 'utilities';
+
+@import '../shinobi/pages/main';
+@import '../shinobi/backgrounds'

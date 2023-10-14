@@ -190,3 +190,16 @@ $utilities: (
   align-items: center;
   text-align: center;
 }
+
+.flex-column {
+  display: flex;
+  flex-direction: row;
+}
+
+.letter-spacing {
+  letter-spacing: $base-font-size*0.3;
+}
+
+.text-justify {
+  text-align: justify;
+}
