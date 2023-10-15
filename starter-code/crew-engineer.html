@@ -1,27 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo&display=swap"
+      rel="stylesheet"
+    />
 
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
+    <title>Frontend Mentor | Space tourism website</title>
+  </head>
+  <body>
+    <main class="main crew">
+      <nav class="navbar">
+        <img src="assets/shared/logo.svg" alt="logo" class="" />
+        <img
+          src="assets/shared/icon-hamburger.svg"
+          alt="icon-hamburger"
+          class="short-navbar"
+          onclick="showNavbar()"
+        />
+        <section class="full-navbar uppercase">
+          <img
+            class="close-navbar"
+            src="assets/shared/icon-close.svg"
+            alt="icon-close"
+            onclick="closeNavbar()"
+          />
+          <a href="../index.html">
+            <span class="text-secondary">00</span>&nbsp Home
+          </a>
+          <a href="/starter-code/destination-europa.html">
+            <span class="text-secondary">01</span>&nbsp Destination
+          </a>
+          <a href="/starter-code/crew-commander.html" id="current-page">
+            <span class="text-secondary">02</span>&nbsp Crew
+          </a>
+          <a href="/starter-code/technology-capsule.html">
+            <span class="text-secondary">03</span>&nbsp Technology
+          </a>
+        </section>
+      </nav>
+      <section class="mt-5 border-box">
+        <h2 class="uppercase mb-5">
+          <span>02</span>&nbsp
+          <span class="text-secondary">Meet your crew</span>
+        </h2>
+        <section class="centralise text-primary">
+          <div class="box">
+            <h2 class="uppercase letter-spacing mb-1">Flight Engineer</h2>
+            <h1 class="uppercase font-xxl mb-1 text-secondary justify-start">
+              Anousheh Ansari
+            </h1>
+            <p class="mb-3">
+              Anousheh Ansari is an Iranian American engineer and co-founder of
+              Prodea Systems. Ansari was the fourth self-funded space tourist,
+              the first self-funded woman to fly to the ISS, and the first
+              Iranian in space.
+            </p>
+            <div class="nav-buttons mb-3">
+              <a href="crew-commander.html"></a>
+              <a href="crew-engineer.html" aria-current="page"></a>
+              <a href="crew-pilot.html"></a>
+              <a href="crew-specialist.html"></a>
+            </div>
+          </div>
+          <picture>
+            <source
+              media="(min-width: 960px)"
+              srcset="../starter-code/assets/crew/image-anousheh-ansari.webp"
+            />
+            <img
+              src="../starter-code/assets/crew/image-anousheh-ansari.png"
+              alt="image-douglas-hurley"
+            />
+          </picture>
+        </section>
+      </section>
+    </main>
+  </body>
 
-  02 Meet your crew
-
-  Flight Engineer
-  Anousheh Ansari
-
-  Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. 
-  Ansari was the fourth self-funded space tourist, the first self-funded woman to 
-  fly to the ISS, and the first Iranian in space. 
-</body>
+  <script src="../js/navbar.js"></script>
 </html>

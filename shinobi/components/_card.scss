@@ -21,6 +21,23 @@
   }
 }
 
+.distance {
+  h3 {
+    color: white;
+  }
+}
+
+.title {
+  max-width: 90%;
+  text-align: justify;
+
+  @include xl {
+    max-width: $base-font-size*25;
+  }
+}
+
+
+
 
 
 // @debug math.div(10, 3);

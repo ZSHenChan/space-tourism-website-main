@@ -6,6 +6,8 @@
 }
 
 .navbar {
+  box-sizing: border-box;
+  margin: 0;
   @extend %flex-layout;
   padding: $base-padding*2 0;
   box-shadow: $base-box-shadow;
@@ -28,14 +30,12 @@
 
 .full-navbar {
   display: block;
-  min-width: 50%;
-  max-width: 60%;
   position: relative;
   padding: 0 $base-padding*5;
   transition: 0.5s ease-in-out;
   box-sizing: border-box;
+  overflow: hidden;
   
-  max-width: 100%;
   grid-template-columns: repeat(4, 1fr);
   z-index: 2;
   cursor: pointer;
@@ -57,7 +57,8 @@
       transition: all ease-in-out .2s;
       z-index: 1;
       &:hover {
-        border-bottom: solid 3px $primary;
+        border-bottom: solid 3px $secondary;
+        
       }
   }
 
@@ -68,7 +69,8 @@
 }
 
 #current-page {
-  border-bottom: solid 3px $primary;
+  border-bottom: solid 3px $secondary;
+  color: $secondary;
 }
 .close-navbar {
   z-index: 1;
@@ -87,9 +89,35 @@
     transition: 0.3s;
     transform-origin: center;
     &:hover {
-      border-bottom: solid 3px $primary;
+      border-bottom: solid 3px $secondary;
+      color: $secondary;
     }
-}
+  }
 }
 
-
+.nav-buttons {
+  min-height: $base-font-size;
+  display: flex;
+  justify-content: center;
+  
+  a{
+    content: "";
+    height: 2px;
+    width: 2px;
+    display: flex;
+    border: 2px solid $secondary;
+    padding: 4px;
+    border-radius: 90%;
+    &:hover {
+      background-color: $secondary;
+    }
+    &:not(:last-child) {
+      margin-right: $base-margin;
+    }
+    &[aria-current="page"]{
+      background-color: $secondary;
+    }
+  }
+  
+  
+}

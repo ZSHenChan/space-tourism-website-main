@@ -2,7 +2,7 @@
     display: block;
     box-sizing: border-box;
     min-height: 100dvh;
-    width: 100dvw;
+    // width: 100dvw;
     overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@
         }
     }
     @include xl {
-      justify-content: space-around;
+      justify-content: space-between;
       flex-direction: column;
       max-width: $base-font-size*25;
       text-align:justify;
@@ -98,7 +98,7 @@
   .centralise {
     @include xl{
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
     }
     
   }
