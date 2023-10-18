@@ -219,3 +219,27 @@ $utilities: (
     transform: translateX(-$base-padding*8);
   }
 }
+
+.tech-centralise {
+  display: flex;
+  
+  @include xs {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  @include xl {
+    flex-direction: row-reverse;
+  }
+
+  picture {
+    @include xs {
+      margin-bottom: $base-margin*3;
+    }
+    @include xl {
+      margin-bottom: auto;
+      max-height: $base-padding*20;
+    }
+  }
+}

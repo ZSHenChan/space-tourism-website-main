@@ -46,10 +46,25 @@
 }
 
 .circle-buttons {
-  min-height: $base-font-size*20;
+  // min-height: $base-font-size*20;
   display: flex;
-  flex-direction: column;
+  flex-grow: 1;
+  // flex-direction: column;
   justify-content: space-around;
+  @include xs {
+    min-width: 60%;
+    flex-direction: row;
+    margin-bottom: $base-margin*4;
+  }
+  @include xl {
+    min-height: $base-font-size*20;
+    flex-direction: column;
+    min-width: auto;
+    margin-right: $base-margin*3;
+    margin-bottom: auto;
+    justify-content: space-around;
+  }
+  
 }
 .circle-button {
   font-size: $base-font-size*1.5;

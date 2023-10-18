@@ -36,7 +36,22 @@
   }
 }
 
+.tech-box {
+  @include xl {
+    display: flex;
+  }
+}
 
+.tech-centralise {
+  display: flex;
+  justify-content: center;
+  @include xs {
+    flex-direction: column;
+  }
+  @include xl {
+    flex-direction: row-reverse;
+  }
+}
 
 
 

@@ -102,7 +102,11 @@
     }  
   }
 
-  .
+  .tech-centralise {
+    @include xs {
+      // flex-direction: row-reverse;
+    }
+  }
 }
 
 .hero{
