@@ -201,6 +201,11 @@ $utilities: (
   flex-direction: row;
 }
 
+.flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .letter-spacing {
   letter-spacing: $base-font-size*0.3;
 }

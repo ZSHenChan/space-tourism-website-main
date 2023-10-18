@@ -44,3 +44,24 @@
     } 
   }
 }
+
+.circle-buttons {
+  min-height: $base-font-size*20;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.circle-button {
+  font-size: $base-font-size*1.5;
+  line-height: $base-font-size*1.5;
+  width: $base-font-size*1.5;
+  height: $base-font-size*1.5;
+  padding: $base-padding*1.5;
+  border: solid 1px $primary;
+  border-radius: 50%;
+
+  &[aria-current="tech"] {
+    color: $tertiary;
+    background-color: $secondary;
+  }
+}

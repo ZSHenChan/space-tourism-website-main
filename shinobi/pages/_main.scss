@@ -1,7 +1,7 @@
 .main {
     display: block;
     box-sizing: border-box;
-    min-height: 100dvh;
+    min-height: 120dvh;
     // width: 100dvw;
     overflow: hidden;
     background-size: cover;
@@ -99,9 +99,10 @@
     @include xl{
       flex-direction: row;
       justify-content: space-between;
-    }
-    
+    }  
   }
+
+  .
 }
 
 .hero{

@@ -43,3 +43,19 @@
     padding: 0 $base-padding*7;
   }
 }
+
+.tech {
+  background-size: cover;
+  @include xs {
+    background-image: url(/starter-code/assets/technology/background-technology-mobile.jpg);
+    padding: 0 $base-padding;
+  }
+  @include md {
+    background-image: url(/starter-code/assets/technology/background-technology-tablet.jpg);
+    padding: 0 $base-padding*2;
+  }
+  @include xl {
+    background-image: url(/starter-code/assets/technology/background-technology-desktop.jpg);
+    padding: 0 $base-padding*7;
+  }
+}
